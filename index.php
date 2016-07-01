@@ -112,6 +112,7 @@
     <img src="img4.jpg"/>
   </div>
 </div>
+<!-- carousel navigator-->
 <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
