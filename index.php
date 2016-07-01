@@ -13,6 +13,11 @@
   body {
       position: relative;
   }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
 </style>
 	</head>
 	<body class="body" background="space2.jpg" style=" background-repeat: no-repeat;
@@ -79,6 +84,46 @@
 
  </form>
 
+</div>
+
+  <div class="container">
+<div id = "mycarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#mycarousel" data-to-slide="0" active></li>
+      <li data-target="#mycarousel" data-to-slide="1"></li>
+      <li data-target="#mycarousel" data-to-slide="2"></li>
+        <li data-target="#mycarousel" data-to-slide="3"></li>
+  </ol>
+
+<div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <img src="img1.jpg"/>
+    <div class="carousel-caption">
+      <h2>Feel</h2>
+      <p>Good to see you with tears</p>
+    </div>
+  </div>
+  <div class="item">
+    <img src="img2.jpg"/>
+  </div><div class="item">
+    <img src="img3.jpg"/>
+  </div><div class="item">
+    <img src="img4.jpg"/>
+  </div>
+</div>
+<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+
+</div>
 </div>
 
 <div class="jumbotron" style="background-image:url(wall.jpg) ;
