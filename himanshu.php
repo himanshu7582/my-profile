@@ -132,11 +132,12 @@
 </div>
 <div class="jumbotron">
   <div class="container">
-    <form action="<?htmlspecialchars($_SERVER['PHP_SELF'])" method="post">
+    <form action="<?htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
       Name:<input type="text" name="name"/><br>
       Email:<input type="text" name="name"/><br>
       Phone:<input type="text" name="name"/><br>
-      Message:<br><textarea cols="20" rows="25" name="message"></textarea><br>
+      Message:<br><textarea cols="40" rows="10" name="message"></textarea><br>
+      <input type="submit" value="<span class='glyphicon glyphicon-send'></span>" name="message">
     </form>
   </div>
 </div>
@@ -144,3 +145,4 @@ more......
 	</body>
 
 </html>
+
