@@ -140,13 +140,6 @@
       Phone:   <input type="text" name="phone"/><br><br>
       Message:  <br><textarea cols="40" rows="10" name="msg"></textarea><br> <br>
       <input type="submit" value="Send Message" name="message">
-<div class="jumbotron">
-  <div class="container">
-    <form action="<?htmlspecialchars($_SERVER['PHP_SELF'])" method="post">
-      Name:<input type="text" name="name"/><br>
-      Email:<input type="text" name="name"/><br>
-      Phone:<input type="text" name="name"/><br>
-      Message:<br><textarea cols="20" rows="25" name="message"></textarea><br>
     </form>
   </div>
 </div>
