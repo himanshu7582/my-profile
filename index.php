@@ -130,13 +130,16 @@
 	</p>
 	</div>
 </div>
-<div class="jumbotron">
-  <div class="container">
-    <form action="<?htmlspecialchars($_SERVER['PHP_SELF'])" method="post">
-      Name:<input type="text" name="name"/><br>
-      Email:<input type="text" name="name"/><br>
-      Phone:<input type="text" name="name"/><br>
-      Message:<br><textarea cols="20" rows="25" name="message"></textarea><br>
+<div class="jumbotron" style="background-image:url(message.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;">
+  <div class="container container-form">
+    <form action="<?htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+      Name: <input type="text" name="name"/><br><br>
+      Email:  <input type="text" name="email"/><br><br>
+      Phone:   <input type="text" name="phone"/><br><br>
+      Message:  <br><textarea cols="40" rows="10" name="msg"></textarea><br> <br>
+      <input type="submit" value="Send Message" name="message">
     </form>
   </div>
 </div>
@@ -144,3 +147,34 @@ more......
 	</body>
 
 </html>
+<?php
+
+$name = $email = $phone = $message = '';
+if(isset($_POST['message']))
+{
+  $name = $_POST['name'];
+    $email = $_POST['email'];
+      $phone = $_POST['phone'];
+        $message = $_POST['msg'];
+        $connect = mysqli_connect('localhost','root','','Message');
+        $query = "INSERT INTO message (name,email,phone,message) VALUES ('$name','$email','$phone','$message')";
+          $result =  mysqli_query($connect,$query);
+
+
+          if($result)
+          {
+            echo "<script>alert('Thank You')</script>";
+          }
+}
+
+
+
+
+
+
+
+
+
+
+
+ ?>
